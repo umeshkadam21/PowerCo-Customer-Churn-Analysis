@@ -271,5 +271,3 @@ Potential extensions to this project include:
 ## Conclusion
 
 Customer churn is a multifaceted business problem that requires a combination of analytical, statistical, and strategic approaches. This project demonstrates how data can be leveraged to understand customer behavior, quantify business risk, and support evidence-based retention strategies that contribute to long-term customer value and sustainable business growth.
-
-These are more searchable on GitHub and immediately communicate both the technical and business scope of the project.
