@@ -39,70 +39,18 @@ The project focuses on:
 
 ---
 
-## Dataset
+## Data Overview
 
-The analysis uses historical customer and pricing data containing information such as:
+This project utilizes customer and pricing data provided as part of the PowerCo Customer Churn Analysis case study. The objective is to investigate customer attrition patterns, evaluate the impact of pricing changes on churn, and develop data-driven retention strategies.
 
-* Customer demographics
-* Account tenure
-* Product subscriptions
-* Energy consumption
-* Pricing information
-* Sales channels
-* Customer margins
-* Contract details
-* Churn status
+The two primary datasets used are:
 
----
+* `client_data`: Contains customer account information, including churn status, sales channel, consumption metrics, contract details, product subscriptions, and profitability indicators.
+* `price_data`: Contains historical electricity and gas pricing records used to assess price fluctuations and customer price sensitivity over time.
 
-## Project Workflow
+The datasets were cleaned, merged, and transformed to create an analytical base table for customer behavior analysis. Additional business-oriented features were engineered to support customer segmentation, statistical testing, churn prediction, and customer value analytics.
 
-```
-Data Collection
-        │
-        ▼
-Data Cleaning & Preprocessing
-        │
-        ▼
-Exploratory Data Analysis
-        │
-        ▼
-Feature Engineering
-        │
-        ▼
-Statistical Analysis
-        │
-        ▼
-Customer Segmentation
-        │
-        ▼
-Predictive Modeling
-        │
-        ▼
-Business Insights
-        │
-        ▼
-Retention Strategy Recommendations
-```
-
----
-
-## Project Structure
-
-```
-Customer-Churn-Analysis/
-
-│
-├── EDA - CCA.ipynb
-├── Feature Engineering & Segment-Level Churn Analysis - CCA.ipynb
-├── Statistical Analysis, Price Sensitivity Test & Predictive Modeling - CCA.ipynb
-├── Customer Value Analytics & Retention Roadmap - CCA.ipynb
-│
-├── data/
-├── images/
-├── requirements.txt
-└── README.md
-```
+The final analysis focuses on identifying churn drivers, quantifying revenue at risk, profiling high-value customers, and recommending targeted retention strategies to improve customer lifetime value and reduce attrition.
 
 ---
 
@@ -236,35 +184,6 @@ Based on the analysis, potential retention strategies include:
 * Improve engagement with vulnerable customer groups.
 * Monitor customer value and churn risk using analytical frameworks.
 * Combine behavioral and pricing insights to optimize retention campaigns.
-
----
-
-## Future Improvements
-
-Potential extensions to this project include:
-
-* Interactive Power BI dashboard
-* Customer Lifetime Value (CLV) modeling
-* Advanced model explainability using SHAP
-* Churn risk scoring system
-* Revenue recovery simulations
-* Deployment of a predictive churn monitoring pipeline
-
----
-
-## Repository Highlights
-
-✔ End-to-end analytical workflow
-
-✔ Business-focused problem solving
-
-✔ Statistical validation of key hypotheses
-
-✔ Customer segmentation and value analytics
-
-✔ Predictive modeling for churn detection
-
-✔ Actionable business recommendations
 
 ---
 
