@@ -56,65 +56,81 @@ The final analysis focuses on identifying churn drivers, quantifying revenue at 
 
 ## Key Analysis Performed
 
-### Data Cleaning
-
-* Missing value treatment
-* Duplicate checks
-* Data type corrections
-* Feature formatting
-
-### Exploratory Data Analysis
-
-* Customer churn distribution
-* Customer demographics
-* Product and service usage
-* Revenue patterns
-* Customer tenure analysis
-* Sales channel performance
-
-### Feature Engineering
-
-* Customer value indicators
-* Segment-level metrics
-* Consumption-based features
-* Margin-related features
-* Risk-based customer grouping
-
-### Statistical Analysis
-
-* Hypothesis testing
-* Chi-square analysis
-* T-tests
-* Price sensitivity analysis
-* Relationship between business variables and churn
-
-### Customer Segmentation
-
-* High-value customers
-* High-risk customers
-* Revenue contribution analysis
-* Segment-level churn behavior
-
-### Predictive Modeling
-
-* Data preprocessing
-* Feature selection
-* Model training
-* Performance evaluation
-* Churn probability prediction
+* **Data Cleaning & Preparation** – Handled missing values, corrected data types, and prepared the data for analysis.
+* **Exploratory Data Analysis (EDA)** – Examined customer behavior, churn patterns, revenue trends, and segment characteristics.
+* **Feature Engineering** – Created business-focused features related to customer value, consumption, and profitability.
+* **Statistical Analysis** – Conducted hypothesis testing and price sensitivity analysis to validate key business assumptions.
+* **Customer Segmentation** – Identified high-value, high-risk, and revenue-critical customer groups.
+* **Predictive Modeling** – Built and evaluated machine learning models to predict customer churn.
+* **Business Impact Assessment** – Estimated revenue at risk and developed data-driven retention recommendations.
 
 ---
 
-## Key Business Insights
+## Tools & Technologies
 
-Some of the major findings from the analysis include:
+* **Python:** Pandas, NumPy, Matplotlib, Seaborn, SciPy, Scikit-learn
 
-* Customer churn is influenced by multiple business factors rather than a single variable.
-* Customer tenure plays an important role in retention.
-* Customer value segments exhibit different churn behaviors.
-* Price changes alone may not fully explain customer attrition.
-* Certain customer groups represent a disproportionately high revenue risk.
-* Early identification of vulnerable customers can support proactive retention campaigns.
+* **Analytical Techniques:** Data Cleaning, EDA, Feature Engineering, Statistical Testing, Customer Segmentation, Predictive Modeling, Business Analytics
+
+---
+
+## Insights
+
+**Price Is NOT the Primary Churn Driver**
+* Off-peak price difference between churned and retained customers is <0.05% — statistically insignificant. Price changes over 2015 show no meaningful association with churn.
+
+**Early-Tenure Customers Are the Highest-Risk Segment**
+* Customers in their 1st–3rd year churn at 15.3%, more than double the rate of 5–10 year customers (7.3%). 
+
+**PowerCo Is Losing Its Best Customers**
+* Churned customers have 23% higher average net margin (£228 vs £185) and cluster in the highest-margin quartile (10.9% churn rate).
+
+**Low Consumption = Low Stickiness**
+* Churned customers consume 53% less electricity annually than retained customers (78,862 vs 167,867 kWh). 
+
+**Multi-Product Bundling Is a Protective Moat**
+* Customers with a gas add-on churn at 8.2% vs 10.1% for electricity-only customers. 
+* Gas bundlers represent a 19% lower churn risk.
+
+**Contract Proximity Is a Known Vulnerability**
+* Contract end date proximity is the 4th most important predictor in the Random Forest model (8.9% importance).
+
+**Sales Channel Quality Varies Significantly**
+* Channel A acquires 46% of the customer base but drives a 12.1% churn rate vs 5.6% for Channel C.
+
+**£324K Net Margin Is Lost Annually — Immediate Action Required**
+* The 1,419 churned customers represent £324,046 in net margin.  
+
+---
+
+## Recommendations
+
+**High-Risk Segment Retention:** 
+  * The first 3 years represent the single most vital timeframe for PowerCo to invest in customer retention.
+  * Implement specialized onboarding, predictive triggers, and year 1–3 pricing strategies to mitigate early-tenure churn.
+
+**High-Value Churn Alert:** 
+  * Competitors are successfully targeting PowerCo's most profitable Small and Medium Enterprises (SMEs).
+  * Requires immediate, priority retention strategies to protect top-tier revenue accounts from competitive poaching.
+
+**Low Stickiness in Low Consumers:** 
+  * Low-consumption SMEs are less embedded in PowerCo's infrastructure, making them easier for competitors to poach.
+  * It highlights the need for specialized engagement for smaller consumers who lack natural operational stickiness.
+
+**Massive Cross-Sell Opportunity:**
+  * 82% of the current customer base is electricity-only, representing a major untapped retention lever.
+  * Recommends aggressive gas cross-selling to build a protective barrier around single-product accounts.
+
+**Proactive Defense:** 
+  * Requires PowerCo to overhaul its renewal timeline and beat competitors to the customer conversation.
+
+**Channel Performance Gap:**
+  * The high churn suggests poor onboarding quality or a customer-fit mismatch within the dominant acquisition channel.
+  * Demands an immediate operational audit of Channel A to align acquisition incentives with long-term retention.
+
+**High-ROI Opportunity:**
+  * A targeted retention program achieving a modest 30% save rate would recoup approximately £97K annually.
+  * Retaining these high-risk customers comes at a mere fraction of standard Customer Acquisition Costs (CAC).
 
 ---
 
@@ -132,33 +148,6 @@ The analysis helps:
 
 ---
 
-## Tools and Technologies
-
-### Programming
-
-* Python
-
-### Libraries
-
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* SciPy
-
-### Techniques
-
-* Data Cleaning
-* Exploratory Data Analysis
-* Feature Engineering
-* Statistical Testing
-* Customer Segmentation
-* Predictive Modeling
-* Business Analytics
-
----
-
 ## Skills Demonstrated
 
 This project demonstrates practical experience in:
@@ -172,18 +161,6 @@ This project demonstrates practical experience in:
 * Revenue and retention analytics
 * Business storytelling
 * Data-driven decision making
-
----
-
-## Business Recommendations
-
-Based on the analysis, potential retention strategies include:
-
-* Focus retention efforts on high-value customer segments.
-* Develop targeted interventions for customers showing early churn signals.
-* Improve engagement with vulnerable customer groups.
-* Monitor customer value and churn risk using analytical frameworks.
-* Combine behavioral and pricing insights to optimize retention campaigns.
 
 ---
 
